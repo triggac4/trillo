@@ -1,0 +1,71 @@
+/*
+COLORS
+
+Primary: #eb2f64
+Primary light: #FF3366
+Primary dark: #BA265D
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+
+$bp-1200px:75em;
+$bp-900px:56em;
+$bp-600px:37.5em;
+$bp-500px:31.25em;
+:root{
+    --color-primary: #eb2f64;
+    --color-primary-light: #FF3366;
+    --color-primary-dark: #BA265D;
+
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,0.2);
+    
+    --bottom-border:1px solid var(--color-grey-light-4);
+}
+
+
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+
+    @media (max-width:$bp-900px){
+        font-size: 50%;
+    }
+    @media (max-width:$bp-600px){
+        font-size: 43.75%;
+    }
+}
+body{
+    color: var(--color-grey-dark-2);
+    box-sizing: border-box;
+    font-family: 'opens san',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
